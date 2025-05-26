@@ -29,6 +29,16 @@ This empowers students to reflect, express, and grow emotionally in a **private,
 - ✅ Optional: anonymous peer circles for shared support
 - ✅ Secure, private, and easy to use
 
+## 📈 Impact
+
+Helps students build emotional self-awareness
+
+Provides low-cost, scalable mental health support
+
+Can integrate into college portals or ed-tech platforms
+
+Promotes early intervention and healthy emotional habits
+
 ## ⚙️ Tech Stack
 
 | Layer       | Technology                         |
