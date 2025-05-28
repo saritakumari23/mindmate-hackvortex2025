@@ -50,9 +50,9 @@ Promotes early intervention and healthy emotional habits
 | Sentiment   | DistilBERT / VADER for emotion detection |
 | Auth        | Firebase Authentication            |
 
-## 📸 Screenshots
 
-> *(Include mockups/wireframes here — I’ll help with this)*
+
+
 
 ## 🛠️ Setup & Run Instructions
 
