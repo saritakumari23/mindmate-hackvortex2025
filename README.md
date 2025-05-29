@@ -50,6 +50,20 @@ There’s a strong need for a **private, intelligent, and stigma-free digital co
 
 ---
 
+### 🏠 Home Page  
+![Home](screenshots/Home.png)
+
+### 🎭 Mood Check-In  
+![Check-In](screenshots/Mood-checkin.png)
+
+### 📓 Journal + Analysis  
+![Journal](screenshots/Journal.png)
+
+### 📊 Insights Dashboard  
+![Insights](screenshots/insights.png)
+
+
+
 ## 🛠️ Setup & Run Instructions
 
 ### 🔧 Backend (Flask)
