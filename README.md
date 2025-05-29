@@ -68,7 +68,7 @@ There’s a strong need for a **private, intelligent, and stigma-free digital co
 ### 🔧 Backend (Flask)
 
 ```bash
-git clone https://github.com/yourusername/mindmate-hackvortex2025.git
-cd mindmate-hackvortex2025
+git clone https://github.com/saritakumari23/mindmate-hackvortex2025.git
+cd mindmate-hackvortex2025/mindmate
 pip install -r requirements.txt
 python app.py
