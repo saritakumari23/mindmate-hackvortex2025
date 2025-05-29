@@ -51,16 +51,16 @@ There’s a strong need for a **private, intelligent, and stigma-free digital co
 ---
 
 ### 🏠 Home Page  
-![Home](screenshots/Home.png)
+![Home](Screenshots/Home.png)
 
 ### 🎭 Mood Check-In  
-![Check-In](screenshots/Mood-checkin.png)
+![Check-In](Screenshots/Mood-checkin.png)
 
 ### 📓 Journal + Analysis  
-![Journal](screenshots/Journal.png)
+![Journal](Screenshots/Journal.png)
 
 ### 📊 Insights Dashboard  
-![Insights](screenshots/insights.png)
+![Insights](Screenshots/insights.png)
 
 
 
