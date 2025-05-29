@@ -36,3 +36,4 @@
 ```bash
 git clone https://github.com/saritakumari23/mindmate.git
 cd mindmate
+python app.py
