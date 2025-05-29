@@ -52,7 +52,6 @@ Promotes early intervention and healthy emotional habits
 
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/github/license/yourusername/mindmate-insights)
 ![Built with Flask](https://img.shields.io/badge/Built%20with-Flask-%23FF5733)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
