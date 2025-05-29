@@ -1,0 +1,169 @@
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card dashboard-card mb-5 shadow-lg">
+        <div class="card-body">
+          <h2 class="card-title text-center text-primary mb-5">🧠 MindMate Insights</h2>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fs-3" href="/">🧠 MindMate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/checkin">Daily Check-In</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/journal">Journal</a></li>
+          <li class="nav-item"><a class="nav-link" href="/insights">Insights</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+          <div class="row g-4">
+            <!-- Mood Analysis -->
+            <div class="col-md-6">
+              <div class="card glass-card h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary mb-4">😊 Mood Analysis</h5>
+                  <div class="mood-timeline">
+                    {% for c in checkins %}
+                    <div class="journal-entry p-3 rounded d-flex gap-3 align-items-start">
+                      <span class="badge bg-{{ c.mood_class }} px-3 py-2">{{ c.mood }}</span>
+                      <div>
+                        <small class="text-muted">{{ c.date }}</small>
+                        <p class="mb-0 mt-1 text-dark">{{ c.note }}</p>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Journal Insights -->
+            <div class="col-md-6">
+              <div class="card glass-card h-100">
+                <div class="card-body">
+                  <h5 class="card-title text-secondary mb-4">📓 Journal Insights</h5>
+                  <div class="journal-insights">
+                    {% for j in journals %}
+                    <div class="journal-entry p-3 rounded d-flex gap-3 align-items-start">
+                      <span class="badge bg-{{ j.result.mood_class }} px-3 py-2">{{ j.result.mood }}</span>
+                      <div>
+                        <small class="text-muted">{{ j.date }}</small>
+                        <p class="mb-0 mt-1 text-dark">{{ j.result.summary }}</p>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary Statistics -->
+          <div class="row text-center mt-5 g-4">
+            <div class="col-md-3">
+              <div class="card stats-card shadow-sm">
+                <h6>Total Entries</h6>
+                <div class="number">{{ total_entries }}</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card stats-card shadow-sm">
+                <h6>Positive Days</h6>
+                <div class="number">{{ positive_days }}</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card stats-card shadow-sm">
+                <h6>Longest Streak</h6>
+                <div class="number">{{ longest_streak }} days</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card stats-card shadow-sm">
+                <h6>Current Streak</h6>
+                <div class="number">{{ current_streak }} days</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .dashboard-card {
+    border-radius: 20px;
+    background: #f8fafc;
+    padding: 2rem;
+  }
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --success-color: #2ed573;
+      --warning-color: #ffca3a;
+      --danger-color: #ff4757;
+      --info-color: #1e90ff;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f0f8ff, #e6f3ff);
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+    }
+  .glass-card {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  .stats-card {
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    background: #ffffff;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .stats-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .stats-card h6 {
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .stats-card .number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e293b;
+  }
+
+  .journal-entry {
+    background: #f1f5f9;
+    border-left: 4px solid #6366f1;
+    transition: background 0.2s ease;
+  }
+
+  .journal-entry:hover {
+    background: #e0e7ff;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 767px) {
+    .dashboard-card {
+      padding: 1rem;
+    }
+  }
+</style>

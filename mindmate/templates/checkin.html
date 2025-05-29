@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Check-in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f0f8ff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .checkin-card {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 15px;
+            background: #ffffff;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .emoji-label {
+            font-size: 1.1rem;
+            margin-left: 8px;
+        }
+        .form-check {
+            margin-bottom: 12px;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="checkin-card">
+            <h2 class="text-center mb-4">📝 Daily Mood Check-In</h2>
+
+            {% if success %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ success }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endif %}
+
+            <form method="POST" action="{{ url_for('checkin') }}">
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">How are you feeling today?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" value="happy" id="moodHappy" required>
+                        <label class="form-check-label" for="moodHappy">
+                            😊 <span class="emoji-label">Happy</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" value="neutral" id="moodNeutral">
+                        <label class="form-check-label" for="moodNeutral">
+                            😐 <span class="emoji-label">Neutral</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" value="sad" id="moodSad">
+                        <label class="form-check-label" for="moodSad">
+                            😢 <span class="emoji-label">Sad</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" value="angry" id="moodAngry">
+                        <label class="form-check-label" for="moodAngry">
+                            😠 <span class="emoji-label">Angry</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="mood" value="anxious" id="moodAnxious">
+                        <label class="form-check-label" for="moodAnxious">
+                            😰 <span class="emoji-label">Anxious</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="notes" class="form-label fw-semibold">Share more about your day</label>
+
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a href="{{ url_for('home') }}" class="btn btn-outline-secondary">← Back</a>
+                    <button type="submit" class="btn btn-primary">Submit Check-in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
