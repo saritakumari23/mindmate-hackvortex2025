@@ -52,6 +52,8 @@ There’s a strong need for a **private, intelligent, and stigma-free digital co
 
 ## DEMO:  https://drive.google.com/file/d/1krrLNE4mkR-2A9xYkV3e_5vNRvfG8X2R/view?usp=drive_link
 
+## PPT: https://docs.google.com/presentation/d/1s8kTCPvzEI56HJNzC2F77yfRk0yD2_RA/edit?usp=sharing&ouid=117920342579121468319&rtpof=true&sd=true
+
 ### 🏠 Home Page  
 ![Home](Screenshots/Home.png)
 
