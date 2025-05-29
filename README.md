@@ -56,7 +56,7 @@ There’s a strong need for a **private, intelligent, and stigma-free digital co
 ### 🎭 Mood Check-In  
 ![Check-In](Screenshots/Mood-checkin.png)
 
-### 📓 Journal + Analysis  
+### 📓 Journal  
 ![Journal](Screenshots/Journal.png)
 
 
