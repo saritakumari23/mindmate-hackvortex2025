@@ -1,66 +1,61 @@
-# mindmate-hackvortex2025
-
 # 🧠 MindMate – Mental Health Micro-Coach for Students
 
 ## 💡 Problem Statement
 
-College students silently struggle with stress, anxiety, burnout, and academic pressure. Yet, most don’t seek therapy due to stigma, cost, or lack of access. There's a dire need for a private, intelligent, and supportive digital companion to help students manage their mental health daily.
+College students silently struggle with **stress, anxiety, burnout**, and **academic pressure**. Most hesitate to seek therapy due to **stigma**, **cost**, or **inaccessibility**.
+
+There’s a strong need for a **private, intelligent, and stigma-free digital companion** that supports students emotionally every day.
+
+---
 
 ## 🚀 Solution
 
-**MindMate** is a web/mobile app that acts as a personal **micro-coach** for students, powered by AI. 
-It enables:
+**MindMate** is a web-based AI-powered micro-coach for students. It helps track emotional health, encourages self-reflection, and provides **personalized CBT-based nudges**.
 
-- ✍️ Daily **journaling** with AI-driven sentiment and emotion analysis
-- 🌈 Mood tracking with beautiful heatmaps
-- 🧠 Personalized **CBT-based nudges** for reflection and habit change
-- 📈 Mental health insights over time
-- 🛟 Optional peer support and emergency contacts
+### ✅ Core Features:
+- ✍️ **AI-powered journaling** with sentiment/emotion analysis  
+- 🌈 **Mood check-ins** with emojis and note tracking  
+- 🧠 **CBT micro-habits and nudges** for healthy thinking patterns  
+- 📈 **Insights dashboard** with emotional history  
+- 🛟 Optional: **anonymous peer support** (future scope)  
+- 🔐 **Privacy-first design** — everything is local & secure  
 
-This empowers students to reflect, express, and grow emotionally in a **private, stigma-free** space.
-
-## ✨ Features
-
-- ✅ AI-based journaling with NLP feedback
-- ✅ Mood check-ins with emotion sliders
-- ✅ Personalized micro-nudges based on Cognitive Behavioral Therapy (CBT)
-- ✅ Mood trends and heatmaps
-- ✅ Sentiment + emotion analysis on journal entries
-- ✅ Optional: anonymous peer circles for shared support
-- ✅ Secure, private, and easy to use
+---
 
 ## 📈 Impact
 
-Helps students build emotional self-awareness
+- Helps students build **emotional self-awareness**
+- Offers **affordable, accessible mental health support**
+- Can integrate into **college portals or LMS**
+- Encourages **early intervention** and mental habit-building
 
-Provides low-cost, scalable mental health support
-
-Can integrate into college portals or ed-tech platforms
-
-Promotes early intervention and healthy emotional habits
+---
 
 ## ⚙️ Tech Stack
 
-| Layer       | Technology                         |
-|------------|-------------------------------------|
-| Frontend    | React Native (mobile-first)        |
-| Backend     | Flask (REST API)                   |
-| Database    | SQLite (development), PostgreSQL (prod) |
-| NLP Models  | HuggingFace Transformers / OpenAI API |
-| Sentiment   | DistilBERT / VADER for emotion detection |
-| Auth        | Firebase Authentication            |
+| Layer       | Technology                              |
+|-------------|------------------------------------------|
+| Frontend    | HTML5 + CSS + Bootstrap (Flask templates) |
+| Backend     | Flask (Python REST API)                  |
+| Database    | SQLite (local), PostgreSQL (prod-ready)  |
+| NLP Engine  | TextBlob (prototype), HuggingFace ready  |
+| Sentiment   | VADER / DistilBERT                       |
+| Hosting     | Localhost for demo                       |
 
+---
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Built with Flask](https://img.shields.io/badge/Built%20with-Flask-%23FF5733)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+## 🖥️ Version Note
 
+> 🧪 This is a **Flask-based prototype** of MindMate for HackVortex Round 1. React Native version (mobile-first) planned for post-event.
 
+---
 
 ## 🛠️ Setup & Run Instructions
 
-### Backend (Flask)
+### 🔧 Backend (Flask)
+
 ```bash
-cd backend
+git clone https://github.com/yourusername/mindmate-hackvortex2025.git
+cd mindmate-hackvortex2025
 pip install -r requirements.txt
 python app.py
