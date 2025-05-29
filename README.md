@@ -59,8 +59,7 @@ There’s a strong need for a **private, intelligent, and stigma-free digital co
 ### 📓 Journal + Analysis  
 ![Journal](Screenshots/Journal.png)
 
-### 📊 Insights Dashboard  
-![Insights](Screenshots/insights.png)
+
 
 
 
